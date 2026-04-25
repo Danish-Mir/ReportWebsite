@@ -325,7 +325,7 @@ p{font-size:14px;}
     
     }
 
-    /* FIX REFERENCES RESPONSIVENESS */
+    /* Make REFERENCES RESPONSIVENESS */
 
 #references p {
 
@@ -337,17 +337,7 @@ p{font-size:14px;}
     
     }
     
-    /* If references use lists */
-    
-    #references li {
-    
-    word-wrap: break-word;
-    
-    overflow-wrap: break-word;
-    
-    margin-bottom: 8px;
-    
-    }
+ 
     
     /* Prevent long URLs breaking layout */
     
