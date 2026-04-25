@@ -13,13 +13,23 @@
 </header>
 
 <nav>
+
+    <button class="menu-toggle">
+    ☰
+    </button>
+    
+    <div class="nav-links">
+    
     <a href="#economic">Economic</a>
     <a href="#social">Social</a>
     <a href="#cultural">Cultural</a>
     <a href="#health">Health</a>
     <a href="#crisis">Crisis</a>
     <a href="#references">References</a>
-</nav>
+    
+    </div>
+    
+    </nav>
 
 <main>
 
@@ -270,6 +280,20 @@ Wren, A., 2020. The importance of positive peer relationships for child well-bei
 <footer>
     <p>© 2026 Digital Portfolio</p>
 </footer>
+<script>
 
+    const toggle =
+    document.querySelector(".menu-toggle");
+    
+    const nav =
+    document.querySelector(".nav-links");
+    
+    toggle.addEventListener("click", () => {
+    
+    nav.classList.toggle("active");
+    
+    });
+    
+    </script>
 </body>
 </html>

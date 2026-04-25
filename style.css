@@ -248,3 +248,132 @@ header h1{font-size:24px;}
 p{font-size:14px;}
 
 }
+
+/* NAV COLLAPSE SYSTEM */
+
+.menu-toggle {
+
+    display: none;
+    
+    font-size: 24px;
+    
+    background: none;
+    
+    border: none;
+    
+    color: #4f46e5;
+    
+    padding: 12px;
+    
+    cursor: pointer;
+    
+    }
+    
+    /* Desktop */
+    
+    .nav-links {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+    }
+    
+    /* Mobile */
+    
+    @media (max-width: 768px) {
+    
+    .menu-toggle {
+    
+    display: block;
+    
+    margin: auto;
+    
+    }
+    
+    .nav-links {
+    
+    display: none;
+    
+    flex-direction: column;
+    
+    width: 100%;
+    
+    background: white;
+    
+    }
+    
+    .nav-links a {
+    
+    width: 100%;
+    
+    text-align: center;
+    
+    border-top: 1px solid #eee;
+    
+    }
+    
+    /* When menu is active */
+    
+    .nav-links.active {
+    
+    display: flex;
+    
+    }
+    
+    }
+
+    /* FIX REFERENCES RESPONSIVENESS */
+
+#references p {
+
+    word-wrap: break-word;
+    
+    overflow-wrap: break-word;
+    
+    white-space: normal;
+    
+    }
+    
+    /* If references use lists */
+    
+    #references li {
+    
+    word-wrap: break-word;
+    
+    overflow-wrap: break-word;
+    
+    margin-bottom: 8px;
+    
+    }
+    
+    /* Prevent long URLs breaking layout */
+    
+    #references a {
+    
+    word-break: break-all;
+    
+    }
+
+    /* STRONG REFERENCE RESPONSIVE FIX */
+
+#references {
+
+    overflow-x: hidden;
+    
+    }
+    
+    #references p,
+    #references li {
+    
+    word-wrap: break-word;
+    
+    overflow-wrap: anywhere;
+    
+    line-height: 1.8;
+    
+    }
+    
+ 
